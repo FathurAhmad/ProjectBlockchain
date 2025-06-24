@@ -14,6 +14,7 @@ public class Katalog {
         this.nama = nama;
         this.deskripsi = deskripsi;
         this.harga = harga;
+        this.stok = stok;
     }
     public String getId() {
         return id;

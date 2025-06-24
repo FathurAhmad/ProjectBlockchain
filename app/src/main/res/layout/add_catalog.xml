@@ -6,19 +6,23 @@
     <EditText
         android:id="@+id/etNama"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Nama Produk"/>
     <EditText
         android:id="@+id/etDeskripsi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Produk"/>
     <EditText
         android:id="@+id/etNominal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Harga Produk per Satuan"/>
     <EditText
         android:id="@+id/etStok"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Produk"/>
     <Button
         android:id="@+id/btnTambah"
         android:layout_width="wrap_content"

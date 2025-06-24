@@ -12,23 +12,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Jualin"
-            android:textSize="50sp"
+            android:textSize="40sp"
             android:textAlignment="center"
-            android:padding="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
             android:background="@color/grey"
             android:textColor="@color/light_cream"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDashboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"/>
+            android:layout_margin="15dp"/>
     </LinearLayout>
     <Button
         android:id="@+id/btnTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_beli"
-        android:text="Tambah"
+        android:text="Jual Produk"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

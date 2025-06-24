@@ -3,18 +3,16 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/light_cream"
-    android:layout_margin="15dp">
-
+    android:background="@drawable/background_layout"
+    android:layout_marginBottom="15dp">
     <ImageView
         android:id="@+id/ivCatalog"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:src="@drawable/wortel" />
     <LinearLayout
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="15dp"
         android:layout_marginRight="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -41,16 +39,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stok: 0"/>
-        <Button
-            android:id="@+id/btnBeli"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_beli"
-            android:text="Beli"
-            android:layout_gravity="end"
-            android:padding="0dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -96,9 +96,9 @@ public class DashboardActivity extends AppCompatActivity {
 
                 if (id != null ){
                     databaseReference.child(id).setValue(katalog).addOnSuccessListener(aVoid -> {
-                        Toast.makeText(this, "Target berhasil disimpan", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Produk berhasil disimpan", Toast.LENGTH_SHORT).show();
                     }).addOnFailureListener(e -> {
-                        Toast.makeText(this, "Gagal menyimpan transaksi", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Gagal menyimpan produk", Toast.LENGTH_SHORT).show();
                     });
                 }
                 dialog.dismiss();
