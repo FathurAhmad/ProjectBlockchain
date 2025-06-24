@@ -1,12 +1,14 @@
 package com.example.projectblockchain;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class KatalogDetailActivity extends AppCompatActivity {
     private TextView tvNama, tvDeskripsi, tvHarga, tvStok;
+    private Button btnBeli;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +28,10 @@ public class KatalogDetailActivity extends AppCompatActivity {
         tvDeskripsi.setText(deskripsi);
         tvHarga.setText(String.valueOf(harga));
         tvStok.setText(String.valueOf(stok));
+
+        btnBeli = findViewById(R.id.btnBeli);
+        btnBeli.setOnClickListener(v -> {
+
+        });
     }
 }
