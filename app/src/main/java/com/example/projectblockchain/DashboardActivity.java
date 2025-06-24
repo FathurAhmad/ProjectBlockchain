@@ -26,7 +26,7 @@ public class DashboardActivity extends AppCompatActivity {
     private KatalogAdapter katalogAdapter;
     private List<Katalog> katalogList;
     private DatabaseReference databaseReference;
-    private Button btnTambah;
+    private Button btnTambah, btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,13 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
         recyclerView.setAdapter(katalogAdapter);
+
+        btnLogout = findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(view -> {
+            FirebaseAuth.getInstance().signOut();
+            Toast.makeText(DashboardActivity.this, "Logout berhasil", Toast.LENGTH_SHORT).show();
+            finish();
+        });
 
         btnTambah = findViewById(R.id.btnTambah);
         btnTambah.setOnClickListener(view -> {

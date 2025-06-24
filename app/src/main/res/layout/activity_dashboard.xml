@@ -8,24 +8,42 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/cream">
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jualin"
-            android:textSize="40sp"
-            android:textAlignment="center"
-            android:paddingBottom="10dp"
-            android:paddingTop="25dp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-thin"
-            android:background="@color/grey"
-            android:textColor="@color/light_cream"/>
+            android:layout_height="100dp"
+            android:background="@color/grey">
+            <TextView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jualin"
+                android:layout_margin="10dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/light_cream"/>
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/button_logout"
+                android:text="logout"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvDashboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"/>
     </LinearLayout>
+
+
+
     <Button
         android:id="@+id/btnTambah"
         android:layout_width="match_parent"
