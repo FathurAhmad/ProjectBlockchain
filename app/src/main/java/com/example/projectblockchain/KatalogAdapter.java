@@ -25,6 +25,7 @@ public class KatalogAdapter extends RecyclerView.Adapter<KatalogAdapter.KatalogV
             tvNama = itemView.findViewById(R.id.tvNama);
             tvDeskripsi = itemView.findViewById(R.id.tvDeskripsi);
             tvHarga = itemView.findViewById(R.id.tvHarga);
+            tvStok = itemView.findViewById(R.id.tvStok);
         }
     }
 
